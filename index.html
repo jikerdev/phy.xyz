@@ -1,116 +1,122 @@
 <!DOCTYPE HTML>
-<!--
-	Identity by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
+<html lang="zh">
+
 <head>
-    <title>极客开发者</title>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <!--[if lte IE 8]>
-    <script src="assets/js/html5shiv.js"></script><![endif]-->
-    <link rel="stylesheet" href="assets/css/main.css"/>
-    <!--[if lte IE 9]>
-    <link rel="stylesheet" href="assets/css/ie9.css"/><![endif]-->
-    <!--[if lte IE 8]>
-    <link rel="stylesheet" href="assets/css/ie8.css"/><![endif]-->
+    <title>phy.xyz</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/css/main.css" />
     <noscript>
-        <link rel="stylesheet" href="assets/css/noscript.css"/>
+        <link rel="stylesheet" href="assets/css/noscript.css" />
     </noscript>
+    <style>
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 100;
+            padding-top: 100px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.5);
+            transition: all 1s ease;
+        }
+
+        .modal-content {
+            margin: auto;
+            display: block;
+            width: 90%;
+            max-width: 300px;
+            transition: opacity 1s ease;
+        }
+
+        .close {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 35px;
+            font-weight: bold;
+            color: #f1f1f1;
+            cursor: pointer;
+        }
+
+        li {
+            color: #00e1fff7;
+            display: inline-block;
+            cursor: pointer;
+        }
+    </style>
 </head>
+
 <body class="is-loading">
 
-<!-- Wrapper -->
-<div id="wrapper">
+    <!-- Wrapper -->
+    <div id="wrapper">
 
-    <!-- Main -->
-    <section id="main">
-        <header>
-            <span class="avatar"><img src="images/avatar.jpeg" alt=""
-                                      style=" height: auto; width:; auto; width:150px;"/></span>
-            <p>探索未知的道路上，让我们拥有共同的称呼 -- 开发者</p>
-            <p>欢迎来到极客开发者 ！</p>
-        </header>
-        <!--
-        <hr />
-        <h2>Extra Stuff!</h2>
-        <form method="post" action="#">
-            <div class="field">
-                <input type="text" name="name" id="name" placeholder="Name" />
-            </div>
-            <div class="field">
-                <input type="email" name="email" id="email" placeholder="Email" />
-            </div>
-            <div class="field">
-                <div class="select-wrapper">
-                    <select name="department" id="department">
-                        <option value="">Department</option>
-                        <option value="sales">Sales</option>
-                        <option value="tech">Tech Support</option>
-                        <option value="null">/dev/null</option>
-                    </select>
-                </div>
-            </div>
-            <div class="field">
-                <textarea name="message" id="message" placeholder="Message" rows="4"></textarea>
-            </div>
-            <div class="field">
-                <input type="checkbox" id="human" name="human" /><label for="human">I'm a human</label>
-            </div>
-            <div class="field">
-                <label>But are you a robot?</label>
-                <input type="radio" id="robot_yes" name="robot" /><label for="robot_yes">Yes</label>
-                <input type="radio" id="robot_no" name="robot" /><label for="robot_no">No</label>
-            </div>
-            <ul class="actions">
-                <li><a href="#" class="button">Get Started</a></li>
+        <!-- Main -->
+        <section id="main">
+            <header>
+                <span class="avatar"><img src="images/avatar.jpeg" alt=""
+                        style=" height: auto; width:auto; width:150px;" /></span>
+                <p>愿我们的工作造福人类，让生活更加绚烂，让世界更加美好！</p>
+                <p>欢迎来到 phy 的个人主页！</p>
+            </header>
+            <footer>
+                <ol>
+                    <li><a href="https://www.jkdev.cn" target="_blank">视频</a>
+                    </li>
+                    |
+                    <li><a href="https://jiker.dev" target="_blank">博客</a>
+                    </li>
+                    |
+                    <li><a href="https://github.com/jikerdev" target="_blank">Github</a>
+                    </li>
+                    |
+                    <li><a href="https://space.bilibili.com/172353353/#/" target="_blank">B站</a></li>
+                    |
+                    <li><a type="button" onclick="showImage()">公众号</a></li>
+                </ol>
+            </footer>
+            <br>
+        </section>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <ul class="copyright">
+                <li>&copy; phy.xyz</li>
+                </li>
             </ul>
-        </form>
-        <hr />
-        -->
-        <footer>
-            <li style="color: #00e1fff7; display: inline-block;"><a href="https://www.jkdev.cn" target="_blank">视频</a>
-            </li>
-            |
-            <li style="color: #00e1fff7; display: inline-block;"><a href="https://jiker.dev" target="_blank">博客</a>
-            </li>
-            |
-            <li style="color: #00e1fff7; display: inline-block;"><a href="https://github.com/jikerdev" target="_blank">Github</a>
-            </li>
-            |
-            <li style="color: #00e1fff7; display: inline-block;"><a href="https://space.bilibili.com/172353353/#/"
-                                                                    target="_blank">B站</a></li>
-            |
-            <li style="color: #00e1fff7; display: inline-block;"><a href="../images/wechat.jpg"
-                                                                    target="_blank">公众号</a></li>
         </footer>
-        <br>
-    </section>
 
-    <!-- Footer -->
-    <footer id="footer">
-        <ul class="copyright">
-            <li>&copy; phy.xyz</li>
-            <!-- <li><a href="http://beian.miit.gov.cn/" target="_blank" style="font-size: 14px">ICP备案：黔ICP备2020012090号-2</a> -->
-            </li>
-        </ul>
-    </footer>
+    </div>
 
-</div>
+    <div id="myModal" class="modal">
+        <div class="modal-content"> <span class="close">&times;</span> <img src="" alt="" id="modal-img"
+                style="width:100%;"> </div>
+    </div>
 
-<!-- Scripts -->
-<!--[if lte IE 8]>
-<script src="assets/js/respond.min.js"></script><![endif]-->
-<script>
-    if ('addEventListener' in window) {
-        window.addEventListener('load', function () {
-            document.body.className = document.body.className.replace(/\bis-loading\b/, '');
-        });
-        document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
-    }
-</script>
+    <script>
+        if ('addEventListener' in window) {
+            window.addEventListener('load', function () {
+                document.body.className = document.body.className.replace(/\bis-loading\b/, '');
+            });
+            document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+        }
+
+        function showImage () {
+            var modal = document.getElementById("myModal");
+            var modalImg = document.getElementById("modal-img");
+            modal.style.display = "block";
+            modalImg.src = "../images/wechat.jpg";
+            var span = document.getElementsByClassName("close")[0];
+            span.onclick = function () {
+                modal.style.display = "none";
+            }
+        }
+    </script>
 
 </body>
+
 </html>

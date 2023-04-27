@@ -1,3 +1,3 @@
-# website
+# phy.xyz
 
-网站首页 <https://phy.xyz>
+Home Page : <https://phy.xyz>
